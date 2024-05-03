@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Mantra</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+   
+    <!-- use an import map to link to the Three.js CDN -->
+    <script type="importmap">
+          {
+            "imports": {
+              "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
+              "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/",
+              "three/libs/": "https://unpkg.com/three@0.162.0/examples/libs/"
+            }
+          }
+        </script>
+    
+    <!-- Link to your Javascript file as a type="module", this will execute the file after the HTML is loaded -->
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+      <div id="scene-container"></div>
+      
+      <div class="centered-content">
+        <h1>Soul Mantra</h1>
+        <h4>"Intent is the energy behind the sound"</h4>
+        <p>Everything is energy. All energy has a wave form. Wave form gives off a frequency. Frequency gives an object its resonance.</p>
+        <button id="sound-button">741hz</button>
+      </div>
+      
+      <audio id="healing-sound" loop>
+        <source src="assets/741hz.mp3" type="audio/mp3">
+      </audio>
+      
+</body>
+</html>
